@@ -12,9 +12,8 @@ class Solution:
             res[tuple(count)].append(s)
         return res.values()
 
+
 # My method
-
-
 class Solution2:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         prevMap = defaultdict(list)
