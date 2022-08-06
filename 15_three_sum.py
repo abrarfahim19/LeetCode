@@ -18,7 +18,7 @@ def threeSumCombination(nums):
             else:
                 res.append([n, nums[l], nums[r]])
                 l += 1
-                if nums[l] == nums[l - 1] and l < r:
+                while nums[l] == nums[l - 1] and l < r:
                     l += 1
     return res
 
