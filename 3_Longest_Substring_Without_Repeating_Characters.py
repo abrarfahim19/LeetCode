@@ -1,4 +1,4 @@
-def lengthOfLongestSubstring(self):
+def lengthOfLongestSubstring(s):
     charSet = set()
     l = 0
     res = 0
@@ -9,9 +9,15 @@ def lengthOfLongestSubstring(self):
             l += 1
         charSet.add(s[r])
         res = max(res, r - l + 1)
+        print(charSet)
+        print(res, r, l)
     return res
 
 
-mySet = set()
-mySet.add("hello")
-print(mySet)
+myset = set()
+myset.add("ab")
+myset.add("c")
+myset.add("d")
+# print(myset)
+
+print(lengthOfLongestSubstring("pwwkew"))
