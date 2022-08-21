@@ -18,6 +18,6 @@ myset = set()
 myset.add("ab")
 myset.add("c")
 myset.add("d")
-# print(myset)
+print(myset)
 
 print(lengthOfLongestSubstring("pwwkew"))
